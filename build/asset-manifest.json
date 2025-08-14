@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06a19756.css",
+    "main.js": "/static/js/main.cdcca5fc.js",
+    "static/js/952.9e8c73d7.chunk.js": "/static/js/952.9e8c73d7.chunk.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/yspa.jpg": "/static/media/yspa.69d5b0e521305ada6dec.jpg",
+    "static/media/phonepe-logo.png": "/static/media/phonepe-logo.d54e78fe7569c3bbc356.png",
+    "static/media/upi-logo.png": "/static/media/upi-logo.748b172042a581583fb0.png",
+    "static/media/gpay-logo.png": "/static/media/gpay-logo.5c14c364a0456e3a3f51.png",
+    "index.html": "/index.html",
+    "main.06a19756.css.map": "/static/css/main.06a19756.css.map",
+    "main.cdcca5fc.js.map": "/static/js/main.cdcca5fc.js.map",
+    "952.9e8c73d7.chunk.js.map": "/static/js/952.9e8c73d7.chunk.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06a19756.css",
+    "static/js/main.cdcca5fc.js"
+  ]
+}
