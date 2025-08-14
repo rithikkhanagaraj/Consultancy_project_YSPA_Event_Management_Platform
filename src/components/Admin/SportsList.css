@@ -1,0 +1,119 @@
+.sports-list-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sports-list-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.sports-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sports-list li {
+    margin-bottom: 10px;
+}
+
+.sport-name-button {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.sport-name-button:hover {
+    background: linear-gradient(135deg, #b3151a, #0f1c5c);
+}
+
+.sports-list-analytics-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 8px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sports-list-title {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sports-list-analytics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 18px 4px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    gap: 10px;
+}
+
+.sports-list-analytics-card {
+    text-align: center;
+    flex: 1 1 40%;
+    min-width: 120px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 0 0 transparent;
+    background: white;
+    border-radius: 10px;
+    padding: 18px 0 10px 0;
+}
+
+.sports-list-analytics-card:hover {
+    box-shadow: 0 2px 12px #d7192040;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #bbb;
+}
+
+@media (max-width: 700px) {
+    .sports-list-analytics-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .sports-list-analytics-card {
+        width: 100%;
+        min-width: unset;
+    }
+}

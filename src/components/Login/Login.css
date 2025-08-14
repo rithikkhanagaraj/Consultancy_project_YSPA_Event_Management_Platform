@@ -1,0 +1,183 @@
+/* General Container */
+body {
+    background: white; /* Keep background white */
+    color: black; /* Adjust text color for contrast */
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
+}
+
+/* Login Box */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Login Form */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    padding: 15px;
+  }
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #6c757d;
+  box-shadow: 0px 0px 5px rgba(108, 117, 125, 0.5);
+}
+
+/* Remember Me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  background: linear-gradient(135deg, #d71920, #132577); /* Apply gradient */
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #b3151a, #0f1c5c); /* Darker shade for hover */
+}
+
+/* Signup Link */
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Social Buttons */
+.social-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-buttons button:hover {
+  background: #f5f5f5;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Different Colors for Social Buttons */
+.google-button {
+  color: #d93025;
+  border-color: #d93025;
+}
+
+.apple-button {
+  color: black;
+  border-color: black;
+  background: black;
+  color: white;
+}
+
+.apple-button:hover {
+  opacity: 0.9;
+}

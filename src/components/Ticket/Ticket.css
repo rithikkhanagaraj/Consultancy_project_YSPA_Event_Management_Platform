@@ -1,0 +1,103 @@
+.ticket-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-height: 90vh; /* Limit height to viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.ticket-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.ticket-container h2 {
+    margin-bottom: 10px;
+    color: #d71920;
+    font-size: 1.8rem;
+}
+
+.ticket-container h3 {
+    margin-bottom: 20px;
+    color: #132577;
+    font-size: 1.5rem;
+}
+
+/* Ensure solo and team details fit within the scrollable container */
+.ticket-section {
+    margin-bottom: 30px;
+}
+
+.ticket-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.ticket-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ticket-container li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px ;
+   
+    
+}
+
+.ticket-table td {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.ticket-table td:first-child {
+    font-weight: bold;
+    color: #555;
+}
+
+.download-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #b3151a, #0f1c5c);
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #bbb;
+}

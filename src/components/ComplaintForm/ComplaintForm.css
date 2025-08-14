@@ -1,0 +1,234 @@
+/* ComplaintForm.css */
+
+/* Top Red Block Styling */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d71920, #132577);
+    padding: 0px;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Form Styling */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.form-layout {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Input Fields Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Complaint Textarea Styling */
+textarea {
+    height: 100px;
+}
+
+/* Submit Button Styling */
+.submit-btn,.back-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Form Heading Styling */
+.form-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Back Button Styling */
+.back-btn {
+    background-color: #d71920; /* Same color as submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    width: 100%;
+}
+
+.back-btn:hover {
+    background-color: #132577; /* Hover effect */
+}
+
+/* Ensures the form is centered and doesn't get cut off */
+.form-wrapper {
+    max-width: 400px;
+    margin: 0 px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow-y: auto; /* Makes the form scrollable if content overflows */
+    height: 80vh; /* Ensure enough space for the form, adjust as needed */
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-btn, .back-btn {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Style for the back button */
+.back-btn {
+    background-color: #d71920;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #132577;
+}
+
+/* ComplaintForm Component Styling */
+.complaint-form-container {
+    max-width: 600px; 
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.top-red-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d71920, #132577);
+    border-radius: 8px 8px 0 0;
+    color: white;
+}
+
+.yspa-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.yspa-text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.complaint-form-section {
+    max-width: 700px;
+ 
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+ h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333333;
+    padding-top: 30px;
+}
+
+.complaint-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.complaint-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.complaint-form input,
+.complaint-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+}
+
+.complaint-form textarea {
+    height: 100px;
+}
+
+.submit-button,.back-button {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, #b3151a, #0f1c5c);
+}

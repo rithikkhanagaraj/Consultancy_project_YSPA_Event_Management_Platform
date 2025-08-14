@@ -1,0 +1,114 @@
+.responses-container {
+    max-width: 1200px;
+    margin: 20px ;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: auto; /* Enable horizontal scrolling for the container */
+}
+
+.responses-title {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #132577;
+}
+
+.responses-content {
+    width: 80;
+    overflow-x: auto; /* Enable horizontal scrolling for the table */
+}
+
+.ticket-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    display: block; /* Make the table scrollable */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent table cells from wrapping */
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.ticket-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+.ticket-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.ticket-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .responses-container {
+        padding: 15px;
+    }
+
+    .responses-title {
+        font-size: 1.5rem;
+    }
+
+    .ticket-table th,
+    .ticket-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .responses-container {
+        padding: 10px;
+    }
+
+    .responses-title {
+        font-size: 1.2rem;
+    }
+
+    .ticket-table th,
+    .ticket-table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .ticket-table {
+        display: block; /* Make the table scrollable */
+        overflow-x: auto;
+        white-space: nowrap; /* Prevent table cells from wrapping */
+    }
+}

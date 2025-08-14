@@ -1,0 +1,425 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Completely remove scrolling */
+  background: white;
+  color: #000;
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+}
+
+/* Home Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding:5px ;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff); /* Light gradient background */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.home-container h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f2ecec;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.home-container button {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.home-container button:hover {
+    background: linear-gradient(135deg, #b3151a, #0f1c5c);
+}
+
+/* Top Red Block */
+.top-red-block {
+  background: linear-gradient(135deg, #d71920, #132577);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px ; /* Compact padding */
+  gap: 5px; /* Space between icon and text */
+  width: 100vw; /* Full width of the viewport */
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0; /* Remove any default margins */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* YSPA Logo - Adjusted for better visibility */
+.yspa-logo {
+    width: 80px; /* Increase size for better visibility */
+    height: 80px;
+    border-radius: 50%; /* Keep circular shape */
+    object-fit: cover;
+    display: inline-block;
+    border: 2px solid white; /* Add a border for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+/* Text Container */
+.yspa-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  /* Center align icon and text */
+  gap: 3px;
+  overflow: hidden;  /* Prevent overflow */
+  white-space: nowrap;  /* Single line */
+  text-overflow: ellipsis;  /* Add ellipsis for overflow */
+}
+
+/* Text Styling */
+.yspa-text {
+  font-size: 0.6rem;  /* Compact font size for mobile */
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  overflow: hidden;  /* Prevent overflow */
+  text-overflow: ellipsis;
+}
+
+/* Tabs */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px ;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 25px; /* Add gap between buttons */
+}
+.tab {
+  padding: 20px;
+  margin: 0; /* Remove individual margins since gap is used */
+  background: #eee;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  flex: 1; /* Ensure buttons take equal space in a row */
+  max-width: 100px; /* Limit button width */
+  text-align: center;
+}
+.tab:hover {
+  background: #ddd;
+  transform: translateY(-2px);
+}
+.tab.active {
+  background: linear-gradient(135deg, #d71920, #132577);
+  color: white;
+}
+
+/* Remove posts-container styles */
+.posts-container {
+  display: unset;
+  padding: unset;
+  margin: unset;
+}
+
+/* Adjust post layout */
+.post {
+  margin: 10px auto;
+  max-width: 100%;
+  background: white;
+  border-radius: 0; /* Remove border radius */
+  box-shadow: none; /* Remove shadow */
+  padding: 10px; /* Add padding for organization */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease-in-out;
+}
+.post.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.post:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Align post-actions buttons side by side */
+.post-actions {
+  
+  justify-content: left; /* Align icons to the left */
+  align-items: center;
+  padding: 4px;
+   flex-direction: row;
+}
+
+.like-btn:hover img,
+.share-btn:hover img {
+  transform: scale(1.02); /* Slight hover effect */
+}
+.like-icon,
+.share-icon {
+  width: 24px; /* Icon size */
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ 
+}
+.like-icon:hover,
+.share-icon:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
+.proceed-btn {
+  background: linear-gradient(135deg, #d71920, #132577);
+  color: white;
+  padding: 5px 10px; /* Compact button size */
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+.proceed-btn:hover {
+  opacity: 0.9;
+}
+.post-description {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  z-index: 9999;
+  text-align: center;
+}
+.popup h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.popup p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.popup .proceed-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #d71920, #132577);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.popup .proceed-btn:hover {
+  opacity: 0.9;
+}
+
+/* Fixed Register Button */
+.fixed-register-btn {
+    position: fixed;
+    bottom: 20px; /* Position it 20px from the bottom */
+    right: 10px; /* Position it 20px from the right edge */
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    padding: 8px 12px; /* Smaller padding for a compact button */
+    border-radius: 50%; /* Circular button */
+    border: none;
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 50px; /* Fixed width for a small button */
+    height: 50px; /* Fixed height for a small button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-register-btn:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background: linear-gradient(135deg, #b3151a, #0f1c5c); /* Darker gradient on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-red-block {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Compact padding */
+    gap: 5px; /* Space between icon and text */
+    flex-direction: row; /* Ensure content stays in a single line */
+  }
+  .yspa-logo {
+    width: 16px; /* Smaller icon size for mobile */
+    height: 16px; /* Smaller icon size for mobile */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .yspa-text {
+    font-size: 0.6rem; /* Smaller font size for mobile */
+    font-weight: 600;
+    margin: 0; /* Remove extra margins */
+    text-align: center;
+  }
+  .tabs-container {
+    flex-direction: row; /* Ensure row-wise layout */
+    gap: 30px; /* Add spacing between buttons */
+  }
+  .tab {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+  .post {
+    margin: 10px auto;
+    max-width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+  }
+  .like-btn img,
+  .share-btn img {
+    width: 18px;
+    height: 18px;
+  }
+  .proceed-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .fixed-register-btn {
+    bottom: 15px; /* Adjust position for smaller screens */
+    right: 15px;
+    width: 40px; /* Smaller width for smaller screens */
+    height: 40px; /* Smaller height for smaller screens */
+    font-size: 10px; /* Smaller font size */
+  }
+}
+@media (max-width: 600px) {
+  .top-red-block {
+    padding: 5px; /* Ensure compact padding for smaller screens */
+    gap: 4px; /* Slightly reduced gap for smaller screens */
+    flex-direction: column;
+  }
+  .yspa-logo {
+    width: 12px; /* Further reduce icon size for smaller screens */
+    height: 12px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .yspa-name {
+    align-items: center;
+    text-align: center;
+  }
+  .yspa-text {
+    font-size: 0.6rem; /* Further reduce font size for smaller screens */
+  }
+  .tabs-container {
+    flex-direction: row; /* Maintain row-wise layout */
+    gap: 20px; /* Reduce spacing for very small screens */
+  }
+  .tab {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px 12px; /* Compact padding */
+  }
+  .fixed-register-btn {
+    bottom: 10px; /* Further adjust position for very small screens */
+    right: 10px;
+    width: 35px; /* Compact width */
+    height: 35px; /* Compact height */
+    font-size: 8px; /* Compact font size */
+  }
+}
+@media (max-width: 480px) {
+  .yspa-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .yspa-text {
+    font-size: 0.75rem;
+  }
+  .tabs-container {
+    flex-direction: row; /* Maintain row-wise layout */
+    gap: 25px; /* Reduce spacing for very small screens */
+  }
+  .tab {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px 12px; /* Compact padding */
+  }
+  .post-actions {
+    padding: 8px;
+  }
+  .tab {
+    margin: 5px 0;
+  }
+  .proceed-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .fixed-register-btn {
+    bottom: 10px; /* Further adjust position for very small screens */
+    right: 10px;
+    width: 35px; /* Compact width */
+    height: 35px; /* Compact height */
+    font-size: 8px; /* Compact font size */
+  }
+}

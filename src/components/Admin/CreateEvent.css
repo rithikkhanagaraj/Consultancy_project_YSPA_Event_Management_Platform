@@ -1,0 +1,104 @@
+.create-event-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.top-red-block {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-red-block h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.top-red-block h6 {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+}
+
+.event-type-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.event-button {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+    background: linear-gradient(135deg, #b3151a, #0f1c5c);
+}
+
+.description-box {
+    width: 90%;
+    max-width: 600px;
+    height: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+}
+
+.image-upload {
+    margin: 20px 0;
+}
+
+.image-label {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.image-preview {
+    margin-top: 15px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.back-button {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Small space between Post and Back buttons */
+}
+
+
+.back-button:hover {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white; /* Ensure the text stays white on hover */
+}
+
+button:disabled {
+    background: linear-gradient(135deg, #d71920, #132577); /* Optional: Disabled state gradient */
+    color: white; 
+}
+

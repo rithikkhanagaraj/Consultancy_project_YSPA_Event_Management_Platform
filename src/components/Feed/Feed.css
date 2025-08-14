@@ -1,0 +1,278 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.feed-container {
+    min-height: 100vh;
+    padding-top: 30px; /* Adjusted to account for the height of the fixed top block */
+    padding-bottom: 150px; /* Added bottom space to ensure last box is visible */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Top Red Block */
+
+/* Home Container */
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.home-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto; /* enables vertical scrolling */
+    padding-bottom: 100px; /* ensures bottom content is not hidden */
+}
+
+.top-red-block {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px; /* More vertical space */
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 150px; /* Ensure full space */
+    overflow: visible; /* Important: allow full text visibility */
+    gap: 5px; /* Reduced gap between logo and text */
+}
+
+.yspa-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.yspa-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2; /* tighter spacing */
+}
+
+  .yspa-text {
+    font-size: 0.65rem; /* adjust as needed */
+    font-weight: 700;
+    margin: 2px 0;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  
+  
+.yspa-name h2 {
+    font-size: 0.65rem;
+   
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.yspa-name h6 {
+    font-size: 0.7rem;
+    margin-top: 3px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+/* Responsive fix */
+@media (max-width: 600px) {
+    .top-red-block {
+        padding: 30px 10px;
+    }
+
+    .yspa-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    
+}
+
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .top-red-block {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .yspa-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+/* Button Section */
+.button-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.feed-button {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+.feed-button:hover {
+    background: linear-gradient(135deg, #b3151a, #0f1c5c);
+}
+
+/* Static Content */
+.static-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.static-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.static-content hr {
+    margin: 10px auto;
+    width: 50%;
+    height: 4px;
+    border: none;
+    background: linear-gradient(135deg, #d71920, #132577);
+    border-radius: 2px;
+}
+
+/* Founder Section */
+.founder-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.founder-section.left-align {
+    flex-direction: row;
+}
+
+.founder-section.right-align {
+    flex-direction: row-reverse;
+}
+
+/* Founder Image */
+.founder-image,
+.founder-image-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    margin-bottom: 10px; /* Reduce space below image block */
+}
+
+.founder-image img,
+.founder-image-block img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.founder-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Founder Info Box */
+.founder-info,
+.founder-info-block {
+    background: linear-gradient(135deg, #d71920, #132577);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto 30px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Responsive Fixes */
+@media (max-width: 600px) {
+    .founder-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-info,
+    .founder-info-block {
+        padding: 18px;
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .founder-image img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .founder-name {
+        font-size: 18px;
+    }
+
+    .static-content {
+        margin-top: 30px;
+    }
+
+    .feed-container {
+        padding-bottom: 180px;
+    }
+}
+
+/* AOS Animation Reset */
+[data-aos] {
+    opacity: 1 !important;
+}
